@@ -6,8 +6,7 @@
 \usage{
 ggplot_fp(data1, resolution = resolution, step = step, yAxis = yAxis,
   xAxisUnits = xAxisUnits, xmin = xmin, xmax = xmax,
-  tick.every = tick.every, label.every = label.every, window = window,
-  title = title, observations = observations)
+  tick.every = tick.every, label.every = label.every)
 }
 \arguments{
 \item{data1}{data formated into \code{freqprof} class.}
@@ -30,12 +29,6 @@ the number of time units.}
 
 \item{label.every}{label every X ticks, where X = label.every. By default, 
 label.every = 3.}
-
-\item{window}{window size}
-
-\item{title}{graph title}
-
-\item{observations}{number of rows}
 }
 \value{
 A ggplot of the frequency profile data in \code{data1}
