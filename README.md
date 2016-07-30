@@ -8,7 +8,7 @@ R package for Frequency Profiles
 ### The Frequency Profile
 The frequency profile is a method for visualizing an individuals' behaviors in real time or post-hoc. This package provides tools for converting occurrence/nonoccurrence (binary) behavioral data into a frequency profile format, tools for plotting the frequency profile, and an interface for exploring frequency profiles.
 
-![](https://i.imgur.com/9DvRzhW.png)
+![](img/UCI_ADL.png)
 
 <sub> Data for the above graph can be found in `data` and `data-raw` and originates from:  
 Ordonez, F.J., de Toledo, P., Sanchis, A. (2013). Activity Recognition Using Hybrid Generative/Discriminative Models on Home Environments Using Binary Sensors. _Sensors_, 13, 5460-5477.
@@ -19,7 +19,7 @@ Ordonez, F.J., de Toledo, P., Sanchis, A. (2013). Activity Recognition Using Hyb
 ### Constructing a Frequency Profile
 * Frequency profiles can be adjusted by setting three parameters: __window size__, __step size__, and __resolution__.
   
-![](https://i.imgur.com/gtViBsB.jpg)
+![](img/exp.jpg)
 
 ##### Window Size  
 * Window size is a critically important parameter, and its optimal value will depend both on the application and the nature of the behaviors being observed.  Generally speaking, small window sizes are preferable when behavior changes frequently or when behavior occurs in short bursts, and large window sizes are preferable when behavior changes infrequently.  When scanning through an archive of behavioral data, one might increase the window size when behavior changes are infrequent and then decrease it when such changes are frequent or when one is searching for a brief behavioral event.
@@ -56,7 +56,7 @@ data(s58)
 > runEx()
 ```
 
-![](https://i.imgur.com/zjvcQVn.png)
+![](img/shiny.png)
 
 ------
 

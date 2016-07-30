@@ -2,6 +2,7 @@
 ^\.Rproj\.user$
 ^archive$
 ^applications$
+^img$
 ^cran-comments\.md$
 ^revdep$
 ^data-raw$

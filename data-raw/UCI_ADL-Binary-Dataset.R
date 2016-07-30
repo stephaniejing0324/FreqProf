@@ -110,10 +110,9 @@ new = cbind(Breakfast, Grooming, Leaving, Lunch,
 
 ### Gotcha
 p = plot_freqprof(freqprof(new[199500:204000, ]), gg = T)
-p + theme_classic()
+
 
 p = plot_freqprof(freqprof(new[200000:203750, ]), gg = T)
-p + theme_classic()
 
 
 diff <- make_difftime(secs = 199500) #difftime
