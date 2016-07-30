@@ -12,8 +12,9 @@
 #' @examples
 #' data(s58)
 #' freqprof(s58)
+
 freqprof = function(data.behavior,
-                    window     = round(0.25 * nrow(data.behavior)),
+                    window     = 0.25,
                     step       = 1,
                     resolution = 1,
                     which      = c('sum','proportion')) {
@@ -24,6 +25,7 @@ freqprof = function(data.behavior,
   if(!(which %in% c('sum','proportion'))) {
     stop("possible values for variable 'which' are c('sum','proportion').")
   }
+  window = round(window * nrow(data.behavior))
   
   # computing frequency profile
   freqprof = as.data.frame(apply(data.behavior, 2, 
