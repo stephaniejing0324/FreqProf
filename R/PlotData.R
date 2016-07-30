@@ -17,7 +17,6 @@
 #'   where N is the number of time units.
 #' @param label.every label every X ticks, where X = label.every. By default, 
 #'   label.every = 3.
-#' @param title graph title
 #' @return Returns a frequency profiles plot.
 #' @importFrom reshape2 melt
 #' @importFrom graphics abline axis lines mtext par plot
@@ -218,9 +217,6 @@ plot_freqprof = function(data.freqprof,
 #'   the number of time units.
 #' @param label.every label every X ticks, where X = label.every. By default, 
 #'   label.every = 3.
-#' @param window window size
-#' @param title graph title
-#' @param observations number of rows
 #' @return A ggplot of the frequency profile data in \code{data1}
 #' 
 ggplot_fp <- function(data1, 

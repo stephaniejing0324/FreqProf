@@ -5,9 +5,8 @@
 \title{Plot Frequency Profiles.}
 \usage{
 plot_freqprof(data.freqprof, yAxis = NULL, xAxisUnits = "sec",
-  panel.in = TRUE, panel.out = TRUE, gg = TRUE, multiPlot = FALSE,
-  tick.every = round(length(data.freqprof$data$time)/31), label.every = 3,
-  title = "Frequency Profile")
+  panel.in = TRUE, panel.out = TRUE, gg = FALSE, multiPlot = FALSE,
+  tick.every = round(length(data.freqprof$data$time)/31), label.every = 3)
 }
 \arguments{
 \item{data.freqprof}{data formated into class \code{freqprof}.}
@@ -32,8 +31,6 @@ where N is the number of time units.}
 
 \item{label.every}{label every X ticks, where X = label.every. By default, 
 label.every = 3.}
-
-\item{title}{graph title}
 }
 \value{
 Returns a frequency profiles plot.

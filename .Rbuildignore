@@ -3,6 +3,5 @@
 ^archive$
 ^cran-comments\.md$
 ^revdep$
-^data-raw$
 ^NEWS\.md$
 ^\.travis\.yml
